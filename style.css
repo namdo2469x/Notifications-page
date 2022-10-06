@@ -1,0 +1,168 @@
+@font-face {
+  font-family: "PlusJakarta eBold";
+  src: url(./assets/fonts/static/PlusJakartaSans-ExtraBold.ttf);
+}
+@font-face {
+  font-family: "PlusJakarta Medium";
+  src: url(./assets/fonts/static/PlusJakartaSans-Medium.ttf);
+}
+@font-face {
+  font-family: "PlusJakarta Var";
+  src: url(./assets/fonts/PlusJakartaSans-VariableFont_wght.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font-family: "PlusJakarta Var";
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  background: #f9fafe;
+}
+
+.container {
+  border-radius: 10px;
+  max-width: 660px;
+  height: auto;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(100, 100, 111, 0.078) 0px 7px 29px 0px;
+}
+.container-responsive {
+  max-width: 600px;
+  padding: 0 30px;
+}
+.container .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.container .header-noti {
+  font-family: "PlusJakarta eBold";
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+.container .header-noti span {
+  padding: 1px 9px;
+  background-color: #09337d;
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
+  font-size: 14px;
+  margin-left: 7px;
+  font-family: "PlusJakarta Medium";
+}
+.container .header-button {
+  font-size: 14px;
+  font-family: "PlusJakarta Medium";
+  color: rgb(136, 136, 136);
+}
+.container .header-button:hover {
+  color: #062255;
+  cursor: pointer;
+}
+.container .content {
+  margin-top: 30px;
+}
+.container .content-item.ttl {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0;
+}
+.container .content-item.ttl .img1 {
+  border: 2px solid #fff;
+  border-radius: 5px;
+  width: 39px;
+  height: 39px;
+}
+.container .content-item.ttl .img1 img {
+  width: 100%;
+  height: 100%;
+}
+.container .content-item.ttl .img1:hover {
+  border: 2px solid rgb(221, 221, 221);
+  cursor: pointer;
+}
+.container .content-item {
+  display: flex;
+  margin-top: 10px;
+  margin: 8px 0;
+  border-radius: 8px;
+  font-size: 12px;
+  padding: 10px 0;
+}
+.container .content-item.active {
+  background: #f6f9fe;
+}
+.container .content-item .img {
+  width: 39px;
+  height: 39px;
+  margin-left: 15px;
+  margin-right: 18px;
+}
+.container .content-item .img img {
+  width: 39px;
+}
+.container .content-item .para1,
+.container .content-item .para2 {
+  color: rgb(106, 105, 105);
+  position: relative;
+}
+.container .content-item .para1 .name,
+.container .content-item .para1 .post,
+.container .content-item .para2 .name,
+.container .content-item .para2 .post {
+  font-family: "PlusJakarta eBold";
+}
+.container .content-item .para1 .name:hover,
+.container .content-item .para1 .post:hover,
+.container .content-item .para2 .name:hover,
+.container .content-item .para2 .post:hover {
+  color: #063999;
+  cursor: pointer;
+}
+.container .content-item .para1 .name,
+.container .content-item .para2 .name {
+  color: #000;
+  margin-right: 5px;
+}
+.container .content-item .para1 .post,
+.container .content-item .para2 .post {
+  margin-left: 5px;
+}
+.container .content-item .para1 .mark,
+.container .content-item .para2 .mark {
+  color: #ce605e;
+  position: absolute;
+  right: -10px;
+  top: -4px;
+  font-size: 17px;
+  display: none;
+}
+.container .content-item .para1 .mark.active,
+.container .content-item .para2 .mark.active {
+  display: flex;
+}
+.container .content-item .para2 {
+  color: rgb(168, 166, 166);
+  margin-top: 5px;
+}
+.container .content-item .message {
+  max-width: 422px;
+  margin-top: 10px;
+  padding: 15px;
+  border-radius: 4px;
+  border: 1px solid rgb(221, 215, 215);
+  color: rgb(106, 105, 105);
+}
+.container .content-item .message:hover {
+  background: #e5eff9;
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */
